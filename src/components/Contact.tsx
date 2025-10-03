@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
 
 const contactInfo = [
   {
@@ -87,8 +88,18 @@ export function Contact() {
     }
 
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Send email using EmailJS
+      await emailjs.send(
+        'service_bpx7f44', // Service ID
+        'template_6q5o1rp', // Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject || 'Contact Form Submission',
+          message: formData.message,
+        },
+        'e0TmXEjJsNP5SqL-x' // Public Key
+      );
       
       toast({
         title: "Message Sent!",
@@ -103,6 +114,7 @@ export function Contact() {
         message: ""
       });
     } catch (error) {
+      console.error('EmailJS Error:', error);
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",
