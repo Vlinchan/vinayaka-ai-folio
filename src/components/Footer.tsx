@@ -8,7 +8,7 @@ const socialLinks = [
   },
   {
     name: "LinkedIn", 
-    href: "https://linkedin.com/in/Vinayaka-Linchan-14747926b",
+    href: "https://www.linkedin.com/in/Vinayaka-Linchan-14747926b/",
     icon: Linkedin,
   },
   {

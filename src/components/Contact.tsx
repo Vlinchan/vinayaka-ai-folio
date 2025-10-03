@@ -10,14 +10,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "vinayaka.linchan@email.com",
-    href: "mailto:vinayaka.linchan@email.com"
+    value: "vinayakalinchan@gmail.com",
+    href: "mailto:vinayakalinchan@gmail.com"
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 98765 43210",
-    href: "tel:+919876543210"
+    value: "+91 8296616204",
+    href: "tel:+918296616204"
   },
   {
     icon: MapPin,
@@ -31,13 +31,13 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com/vinayaka",
-    username: "@vinayaka"
+    href: "https://github.com/Vlinchan",
+    username: "@Vlinchan"
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com/in/vinayaka",
+    href: "https://www.linkedin.com/in/Vinayaka-Linchan-14747926b/",
     username: "Vinayaka Linchan"
   }
 ];
