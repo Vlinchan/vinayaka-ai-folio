@@ -3,17 +3,17 @@ import { Github, Linkedin, Mail, Heart } from "lucide-react";
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/vinayaka",
+    href: "https://github.com/Vlinchan",
     icon: Github,
   },
   {
     name: "LinkedIn", 
-    href: "https://linkedin.com/in/vinayaka",
+    href: "https://linkedin.com/in/Vinayaka-Linchan-14747926b",
     icon: Linkedin,
   },
   {
     name: "Email",
-    href: "mailto:vinayaka.linchan@email.com",
+    href: "mailto:vinayakalinchan@gmail.com",
     icon: Mail,
   },
 ];
@@ -100,10 +100,10 @@ export function Footer() {
                 Open to opportunities
               </p>
               <a
-                href="mailto:vinayaka.linchan@email.com"
+                href="mailto:vinayakalinchan@gmail.com"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors block"
               >
-                vinayaka.linchan@email.com
+                vinayakalinchan@gmail.com
               </a>
               <p className="text-sm text-muted-foreground">
                 Karnataka, India

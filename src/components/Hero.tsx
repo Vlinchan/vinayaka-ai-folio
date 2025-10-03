@@ -63,7 +63,7 @@ export function Hero() {
           
           <div className="mt-12 flex items-center justify-center gap-6 animate-fade-up">
             <a
-              href="https://github.com/vinayaka"
+              href="https://github.com/Vlinchan"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -72,7 +72,7 @@ export function Hero() {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com/in/vinayaka"
+              href="https://linkedin.com/in/Vinayaka-Linchan-14747926b"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

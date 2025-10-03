@@ -5,22 +5,6 @@ import { Badge } from "@/components/ui/badge";
 const projects = [
   {
     id: 1,
-    title: "Face Detection & Multi-Face Tracker",
-    description: "Real-time webcam application that detects and tracks multiple faces simultaneously with bounding boxes and ID tracking. Implements advanced computer vision algorithms for robust face recognition.",
-    longDescription: "Built using Python and OpenCV, this application demonstrates real-time computer vision capabilities with multi-face detection and tracking functionality.",
-    techStack: ["Python", "OpenCV", "NumPy", "Threading"],
-    features: [
-      "Real-time face detection",
-      "Multiple face tracking with IDs",
-      "Bounding box visualization",
-      "Performance optimized"
-    ],
-    githubUrl: "https://github.com/vinayaka/face-tracker",
-    demoUrl: "",
-    status: "Completed"
-  },
-  {
-    id: 2,
     title: "Object Detection",
     description: "Real-time object detection system using OpenCV and Python, capable of identifying multiple objects in images, videos, and live webcam feeds.",
     longDescription: "Developed a comprehensive object detection system with support for multiple input sources including images, videos, and live webcam feeds.",
@@ -36,20 +20,20 @@ const projects = [
     status: "Completed"
   },
   {
-    id: 3,
-    title: "Real-time Web Application",
-    description: "Modern web application showcasing real-time data processing and visualization. Demonstrates full-stack development skills with responsive design and efficient architecture.",
-    longDescription: "MERN stack application with real-time capabilities, demonstrating modern web development practices and API integration.",
-    techStack: ["React", "Node.js", "MongoDB", "Socket.io", "Tailwind CSS"],
+    id: 2,
+    title: "Dash Game",
+    description: "Interactive web-based game built with HTML, CSS, and JavaScript. Features engaging gameplay mechanics and responsive controls for an immersive gaming experience.",
+    longDescription: "Created a simple yet addictive game using core web technologies, demonstrating proficiency in DOM manipulation and game logic implementation.",
+    techStack: ["HTML", "CSS", "JavaScript"],
     features: [
-      "Real-time data updates",
-      "Responsive design",
-      "RESTful API integration",
-      "Modern UI/UX"
+      "Interactive gameplay",
+      "Responsive controls",
+      "Score tracking",
+      "Browser-based gaming"
     ],
-    githubUrl: "https://github.com/vinayaka/realtime-app",
-    demoUrl: "https://vinayaka-realtime-app.netlify.app",
-    status: "In Progress"
+    githubUrl: "https://github.com/Vlinchan/Dash-Game",
+    demoUrl: "",
+    status: "Completed"
   }
 ];
 
@@ -174,7 +158,7 @@ export function Projects() {
           <Button
             variant="outline"
             className="btn-outline"
-            onClick={() => window.open("https://github.com/vinayaka", "_blank")}
+            onClick={() => window.open("https://github.com/Vlinchan", "_blank")}
           >
             <Github className="mr-2 h-4 w-4" />
             View All Projects on GitHub
