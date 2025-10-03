@@ -21,17 +21,17 @@ const projects = [
   },
   {
     id: 2,
-    title: "Object Detection Pipeline",
-    description: "Custom object detection model trained using YOLO and TensorFlow/PyTorch on specialized dataset. Includes complete training pipeline, inference scripts, and demo visualization.",
-    longDescription: "End-to-end machine learning pipeline for custom object detection with model training, evaluation, and deployment capabilities.",
-    techStack: ["Python", "YOLO", "TensorFlow", "PyTorch", "OpenCV"],
+    title: "Object Detection",
+    description: "Real-time object detection system using OpenCV and Python, capable of identifying multiple objects in images, videos, and live webcam feeds.",
+    longDescription: "Developed a comprehensive object detection system with support for multiple input sources including images, videos, and live webcam feeds.",
+    techStack: ["Python", "OpenCV"],
     features: [
-      "Custom dataset training",
-      "YOLO model implementation",
-      "Inference optimization",
-      "Performance metrics tracking"
+      "Real-time object detection",
+      "Image detection support",
+      "Video detection support",
+      "Live webcam detection"
     ],
-    githubUrl: "https://github.com/vinayaka/object-detection",
+    githubUrl: "https://github.com/Vlinchan/ObjectDetection-2",
     demoUrl: "",
     status: "Completed"
   },
