@@ -98,10 +98,10 @@ const TimelineItem = ({ item, isLast }: { item: typeof education[0]; isLast: boo
 
 export function Resume() {
   const handleDownloadResume = () => {
-    // Placeholder for resume download functionality
-    console.log("Downloading resume...");
-    // In a real application, this would trigger a download
-    // window.open("/path/to/resume.pdf", "_blank");
+    const link = document.createElement('a');
+    link.href = '/Vinayaka_Linchan_Resume.pdf';
+    link.download = 'Vinayaka_Linchan_Resume.pdf';
+    link.click();
   };
 
   return (

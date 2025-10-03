@@ -11,8 +11,10 @@ export function Hero() {
   };
 
   const handleDownloadResume = () => {
-    // Placeholder for resume download
-    console.log("Download resume clicked");
+    const link = document.createElement('a');
+    link.href = '/Vinayaka_Linchan_Resume.pdf';
+    link.download = 'Vinayaka_Linchan_Resume.pdf';
+    link.click();
   };
 
   return (
