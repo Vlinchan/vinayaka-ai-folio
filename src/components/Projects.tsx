@@ -21,6 +21,22 @@ const projects = [
   },
   {
     id: 2,
+    title: "Employee Performance Tracker",
+    description: "Android application for tracking and managing employee performance metrics. Built with Android Studio, featuring intuitive UI for performance monitoring and evaluation.",
+    longDescription: "Developed a comprehensive employee tracking system for Android devices to help organizations monitor and evaluate employee performance.",
+    techStack: ["Android Studio", "Java", "XML"],
+    features: [
+      "Employee performance tracking",
+      "Performance metrics dashboard",
+      "Data management",
+      "User-friendly interface"
+    ],
+    githubUrl: "https://github.com/Vlinchan/EmployeeTracker",
+    demoUrl: "",
+    status: "Completed"
+  },
+  {
+    id: 3,
     title: "Dash Game",
     description: "Interactive web-based game built with HTML, CSS, and JavaScript. Features engaging gameplay mechanics and responsive controls for an immersive gaming experience.",
     longDescription: "Created a simple yet addictive game using core web technologies, demonstrating proficiency in DOM manipulation and game logic implementation.",
