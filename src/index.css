@@ -2,148 +2,136 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* Professional AI/ML Portfolio Design System */
+/* Cyberpunk Portfolio Design System */
 
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --background: 220 20% 97%;
-    --foreground: 220 15% 15%;
-    --surface: 220 20% 99%;
+    /* Cyberpunk Core Colors */
+    --background: 240 20% 4%;
+    --foreground: 180 100% 90%;
+    --surface: 240 25% 8%;
     
-    /* Brand Colors */
-    --primary: 45 93% 47%;
-    --primary-foreground: 220 15% 15%;
-    --primary-glow: 45 93% 60%;
+    /* Neon Cyan Primary */
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 20% 4%;
+    --primary-glow: 180 100% 70%;
     
-    /* Accent Colors */
-    --accent: 45 93% 47%;
-    --accent-foreground: 220 15% 15%;
-    --accent-muted: 45 50% 85%;
+    /* Neon Magenta Accent */
+    --accent: 320 100% 60%;
+    --accent-foreground: 240 20% 4%;
+    --accent-muted: 320 50% 25%;
     
-    /* Secondary Colors */
-    --secondary: 220 15% 92%;
-    --secondary-foreground: 220 15% 25%;
+    /* Secondary - Deep purple */
+    --secondary: 270 50% 15%;
+    --secondary-foreground: 180 100% 90%;
     
     /* Tech Colors */
-    --tech-primary: 210 100% 56%;
-    --tech-success: 142 76% 36%;
-    --tech-warning: 38 92% 50%;
-    --tech-error: 0 84% 60%;
+    --tech-primary: 180 100% 50%;
+    --tech-success: 120 100% 50%;
+    --tech-warning: 45 100% 50%;
+    --tech-error: 0 100% 60%;
     
     /* Neutral System */
-    --muted: 220 15% 92%;
-    --muted-foreground: 220 10% 45%;
-    --border: 220 15% 88%;
-    --input: 220 15% 95%;
-    --ring: 45 93% 47%;
+    --muted: 240 20% 12%;
+    --muted-foreground: 180 30% 60%;
+    --border: 180 100% 50% / 0.2;
+    --input: 240 20% 10%;
+    --ring: 180 100% 50%;
 
     /* Layout System */
-    --card: 220 20% 100%;
-    --card-foreground: 220 15% 15%;
-    --popover: 220 20% 99%;
-    --popover-foreground: 220 15% 15%;
+    --card: 240 25% 6%;
+    --card-foreground: 180 100% 90%;
+    --popover: 240 25% 8%;
+    --popover-foreground: 180 100% 90%;
     
     /* Interactive States */
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 220 20% 97%;
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 240 20% 4%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(45 93% 47%), hsl(45 93% 60%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 20% 97%), hsl(220 15% 92%));
-    --gradient-tech: linear-gradient(135deg, hsl(210 100% 56%), hsl(195 100% 50%));
+    /* Cyberpunk Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50%), hsl(320 100% 60%));
+    --gradient-hero: radial-gradient(ellipse at center, hsl(240 25% 12%) 0%, hsl(240 20% 4%) 100%);
+    --gradient-tech: linear-gradient(135deg, hsl(180 100% 50%), hsl(200 100% 60%));
+    --gradient-neon: linear-gradient(90deg, hsl(180 100% 50%), hsl(320 100% 60%), hsl(180 100% 50%));
     
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(220 15% 15% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(220 15% 15% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(220 15% 15% / 0.1);
-    --shadow-glow: 0 0 20px hsl(45 93% 47% / 0.3);
+    /* Cyberpunk Shadows */
+    --shadow-sm: 0 0 10px hsl(180 100% 50% / 0.2);
+    --shadow-md: 0 0 20px hsl(180 100% 50% / 0.3);
+    --shadow-lg: 0 0 40px hsl(180 100% 50% / 0.4);
+    --shadow-glow: 0 0 30px hsl(180 100% 50% / 0.6), 0 0 60px hsl(320 100% 60% / 0.3);
+    --shadow-neon-cyan: 0 0 20px hsl(180 100% 50% / 0.8), 0 0 40px hsl(180 100% 50% / 0.4);
+    --shadow-neon-magenta: 0 0 20px hsl(320 100% 60% / 0.8), 0 0 40px hsl(320 100% 60% / 0.4);
     
     /* Spacing & Layout */
-    --radius: 0.75rem;
-    --radius-sm: 0.5rem;
-    --radius-lg: 1rem;
+    --radius: 0.25rem;
+    --radius-sm: 0.125rem;
+    --radius-lg: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 240 25% 6%;
+    --sidebar-foreground: 180 100% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 240 20% 4%;
+    --sidebar-accent: 320 100% 60%;
+    --sidebar-accent-foreground: 240 20% 4%;
+    --sidebar-border: 180 100% 50% / 0.2;
+    --sidebar-ring: 180 100% 50%;
   }
 
   .dark {
-    /* Core Brand Colors - Dark Theme */
-    --background: 220 25% 8%;
-    --foreground: 220 20% 95%;
-    --surface: 220 25% 10%;
+    /* Dark mode is the default cyberpunk look */
+    --background: 240 20% 4%;
+    --foreground: 180 100% 90%;
+    --surface: 240 25% 8%;
     
-    /* Brand Colors - Dark */
-    --primary: 45 93% 55%;
-    --primary-foreground: 220 25% 8%;
-    --primary-glow: 45 93% 70%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 20% 4%;
+    --primary-glow: 180 100% 70%;
     
-    /* Accent Colors - Dark */
-    --accent: 45 93% 55%;
-    --accent-foreground: 220 25% 8%;
-    --accent-muted: 45 30% 25%;
+    --accent: 320 100% 60%;
+    --accent-foreground: 240 20% 4%;
+    --accent-muted: 320 50% 25%;
     
-    /* Secondary Colors - Dark */
-    --secondary: 220 20% 15%;
-    --secondary-foreground: 220 20% 85%;
+    --secondary: 270 50% 15%;
+    --secondary-foreground: 180 100% 90%;
     
-    /* Tech Colors - Dark */
-    --tech-primary: 210 100% 60%;
-    --tech-success: 142 76% 40%;
-    --tech-warning: 38 92% 55%;
-    --tech-error: 0 84% 65%;
+    --tech-primary: 180 100% 50%;
+    --tech-success: 120 100% 50%;
+    --tech-warning: 45 100% 50%;
+    --tech-error: 0 100% 60%;
     
-    /* Neutral System - Dark */
-    --muted: 220 20% 15%;
-    --muted-foreground: 220 15% 65%;
-    --border: 220 20% 18%;
-    --input: 220 20% 15%;
-    --ring: 45 93% 55%;
+    --muted: 240 20% 12%;
+    --muted-foreground: 180 30% 60%;
+    --border: 180 100% 50% / 0.2;
+    --input: 240 20% 10%;
+    --ring: 180 100% 50%;
+
+    --card: 240 25% 6%;
+    --card-foreground: 180 100% 90%;
+    --popover: 240 25% 8%;
+    --popover-foreground: 180 100% 90%;
     
-    /* Layout System - Dark */
-    --card: 220 25% 10%;
-    --card-foreground: 220 20% 95%;
-    --popover: 220 25% 12%;
-    --popover-foreground: 220 20% 95%;
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 240 20% 4%;
     
-    /* Interactive States - Dark */
-    --destructive: 0 84% 65%;
-    --destructive-foreground: 220 25% 8%;
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50%), hsl(320 100% 60%));
+    --gradient-hero: radial-gradient(ellipse at center, hsl(240 25% 12%) 0%, hsl(240 20% 4%) 100%);
+    --gradient-tech: linear-gradient(135deg, hsl(180 100% 50%), hsl(200 100% 60%));
     
-    /* Gradients - Dark */
-    --gradient-primary: linear-gradient(135deg, hsl(45 93% 55%), hsl(45 93% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 25% 8%), hsl(220 20% 12%));
-    --gradient-tech: linear-gradient(135deg, hsl(210 100% 60%), hsl(195 100% 55%));
+    --shadow-sm: 0 0 10px hsl(180 100% 50% / 0.2);
+    --shadow-md: 0 0 20px hsl(180 100% 50% / 0.3);
+    --shadow-lg: 0 0 40px hsl(180 100% 50% / 0.4);
+    --shadow-glow: 0 0 30px hsl(180 100% 50% / 0.6), 0 0 60px hsl(320 100% 60% / 0.3);
     
-    /* Shadows - Dark */
-    --shadow-sm: 0 1px 2px 0 hsl(220 25% 5% / 0.3);
-    --shadow-md: 0 4px 6px -1px hsl(220 25% 5% / 0.4);
-    --shadow-lg: 0 10px 15px -3px hsl(220 25% 5% / 0.5);
-    --shadow-glow: 0 0 30px hsl(45 93% 55% / 0.4);
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 240 25% 6%;
+    --sidebar-foreground: 180 100% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 240 20% 4%;
+    --sidebar-accent: 320 100% 60%;
+    --sidebar-accent-foreground: 240 20% 4%;
+    --sidebar-border: 180 100% 50% / 0.2;
+    --sidebar-ring: 180 100% 50%;
   }
 }
 
@@ -153,54 +141,156 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Rajdhani', sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
   html {
     scroll-behavior: smooth;
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.05em;
+  }
 }
 
 @layer components {
-  /* Button Variants */
+  /* Cyberpunk Button Variants */
   .btn-primary {
-    @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-glow;
+    @apply bg-primary text-primary-foreground font-semibold uppercase tracking-wider;
     @apply transition-all duration-300 ease-in-out;
+    @apply hover:shadow-neon-cyan;
+    @apply relative overflow-hidden;
+    font-family: 'Orbitron', sans-serif;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  }
+  
+  .btn-primary::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent;
+    @apply -translate-x-full transition-transform duration-500;
+  }
+  
+  .btn-primary:hover::before {
+    @apply translate-x-full;
   }
   
   .btn-outline {
-    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground;
+    @apply border-2 border-primary text-primary font-semibold uppercase tracking-wider;
     @apply transition-all duration-300 ease-in-out;
+    @apply hover:bg-primary hover:text-primary-foreground hover:shadow-neon-cyan;
+    font-family: 'Orbitron', sans-serif;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
   }
   
   .btn-ghost {
-    @apply text-foreground hover:bg-secondary/80 hover:text-foreground;
+    @apply text-foreground hover:bg-primary/10 hover:text-primary;
     @apply transition-all duration-300 ease-in-out;
   }
   
-  /* Card Components */
+  /* Cyberpunk Card Components */
   .card-elevated {
-    @apply bg-card border border-border shadow-lg hover:shadow-xl;
+    @apply bg-card border border-primary/20 relative;
     @apply transition-all duration-300 ease-in-out;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
+  }
+  
+  .card-elevated::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background: linear-gradient(135deg, hsl(180 100% 50% / 0.1), hsl(320 100% 60% / 0.1));
+  }
+  
+  .card-elevated:hover::before {
+    @apply opacity-100;
   }
   
   .card-interactive {
-    @apply card-elevated hover:scale-[1.02] hover:border-primary/20;
+    @apply card-elevated hover:border-primary/50 hover:shadow-neon-cyan;
   }
   
-  /* Text Styles */
+  /* Neon Text Styles */
   .text-gradient {
-    @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+    background-size: 200% 100%;
+    animation: gradient-shift 3s ease-in-out infinite;
+  }
+  
+  .text-neon-cyan {
+    color: hsl(180 100% 50%);
+    text-shadow: 0 0 10px hsl(180 100% 50% / 0.8), 0 0 20px hsl(180 100% 50% / 0.6), 0 0 30px hsl(180 100% 50% / 0.4);
+  }
+  
+  .text-neon-magenta {
+    color: hsl(320 100% 60%);
+    text-shadow: 0 0 10px hsl(320 100% 60% / 0.8), 0 0 20px hsl(320 100% 60% / 0.6), 0 0 30px hsl(320 100% 60% / 0.4);
+  }
+  
+  /* Glitch Effect */
+  .glitch {
+    position: relative;
+  }
+  
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .glitch::before {
+    animation: glitch-1 2s infinite linear alternate-reverse;
+    color: hsl(180 100% 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  }
+  
+  .glitch::after {
+    animation: glitch-2 3s infinite linear alternate-reverse;
+    color: hsl(320 100% 60%);
+    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
   }
   
   /* Skill Bar Animation */
   .skill-bar {
-    @apply bg-secondary rounded-full overflow-hidden;
+    @apply bg-muted/50 overflow-hidden border border-primary/20;
+    clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
   }
   
   .skill-progress {
-    @apply bg-gradient-to-r from-primary to-primary-glow h-full transition-all duration-1000 ease-out;
+    @apply bg-gradient-to-r from-primary to-accent h-full transition-all duration-1000 ease-out;
+    box-shadow: 0 0 10px hsl(180 100% 50% / 0.5);
+  }
+  
+  /* Scanlines Overlay */
+  .scanlines {
+    position: relative;
+  }
+  
+  .scanlines::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsl(0 0% 0% / 0.03) 2px,
+      hsl(0 0% 0% / 0.03) 4px
+    );
+    pointer-events: none;
+  }
+  
+  /* Grid Background */
+  .cyber-grid {
+    background-image: 
+      linear-gradient(hsl(180 100% 50% / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(180 100% 50% / 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
   }
   
   /* Animations */
@@ -211,11 +301,41 @@
   .animate-slide-in {
     @apply animate-[slideIn_0.8s_ease-out_forwards];
   }
+  
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+  
+  /* Neon Border */
+  .neon-border {
+    @apply border border-primary/50;
+    box-shadow: 
+      inset 0 0 10px hsl(180 100% 50% / 0.1),
+      0 0 10px hsl(180 100% 50% / 0.3);
+  }
+  
+  /* Cyberpunk Hover Effects */
+  .hover-neon {
+    @apply transition-all duration-300;
+  }
+  
+  .hover-neon:hover {
+    @apply shadow-neon-cyan;
+    filter: brightness(1.2);
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .shadow-neon-cyan {
+    box-shadow: 0 0 20px hsl(180 100% 50% / 0.6), 0 0 40px hsl(180 100% 50% / 0.3);
+  }
+  
+  .shadow-neon-magenta {
+    box-shadow: 0 0 20px hsl(320 100% 60% / 0.6), 0 0 40px hsl(320 100% 60% / 0.3);
   }
 }
 
@@ -239,5 +359,41 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes glitch-1 {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes glitch-2 {
+  0% { transform: translate(0); }
+  20% { transform: translate(2px, -2px); }
+  40% { transform: translate(2px, 2px); }
+  60% { transform: translate(-2px, -2px); }
+  80% { transform: translate(-2px, 2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(180 100% 50% / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(180 100% 50% / 0.6), 0 0 60px hsl(320 100% 60% / 0.3);
   }
 }
