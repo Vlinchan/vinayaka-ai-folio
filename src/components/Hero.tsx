@@ -93,7 +93,7 @@ export function Hero() {
           </div>
           
           {/* Right side - 3D Robot */}
-          <div className="hidden lg:block h-[500px] relative">
+          <div className="lg:block h-[300px] lg:h-[500px] relative mt-8 lg:mt-0">
             <div className="absolute inset-0 border border-primary/20 bg-background/30 backdrop-blur-sm"
               style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))' }}
             >
